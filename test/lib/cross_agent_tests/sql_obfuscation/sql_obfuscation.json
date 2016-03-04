@@ -26,6 +26,7 @@
     ],
     "dialects": [
       "mysql",
+      "mssql",
       "postgres",
       "oracle",
       "cassandra"
@@ -38,6 +39,7 @@
       "SELECT \"t001\".\"c2\" FROM \"t001\" WHERE \"t001\".\"c2\" = ? AND c3=? LIMIT ?"
     ],
     "dialects": [
+      "mssql",
       "postgres",
       "oracle"
     ],
@@ -60,6 +62,7 @@
     ],
     "dialects": [
       "mysql",
+      "mssql",
       "postgres",
       "oracle",
       "cassandra"
@@ -73,6 +76,7 @@
     ],
     "dialects": [
       "mysql",
+      "mssql",
       "postgres",
       "oracle",
       "cassandra"
@@ -86,6 +90,7 @@
     ],
     "dialects": [
       "mysql",
+      "mssql",
       "postgres",
       "oracle",
       "cassandra"
@@ -138,6 +143,7 @@
     ],
     "dialects": [
       "mysql",
+      "mssql",
       "postgres",
       "oracle",
       "cassandra"
@@ -153,6 +159,7 @@
     ],
     "dialects": [
       "mysql",
+      "mssql",
       "postgres",
       "oracle",
       "cassandra"
@@ -175,11 +182,22 @@
     ],
     "dialects": [
       "mysql",
+      "mssql",
       "postgres",
       "oracle",
       "cassandra"
     ],
     "sql": "SELECT * FROM table WHERE name='foo' AND value = 'bar'"
+  },
+  {
+    "name": "string_single_quoted_unicode.mssql",
+    "obfuscated": [
+      "SELECT * FROM table WHERE name=? AND value = ?"
+    ],
+    "dialects": [
+      "mssql"
+    ],
+    "sql": "SELECT * FROM table WHERE name=N'foo' AND value = N'bar'"
   },
   {
     "name": "string_with_backslash_and_twin_single_quotes",
@@ -188,6 +206,7 @@
     ],
     "dialects": [
       "mysql",
+      "mssql",
       "postgres",
       "oracle",
       "cassandra"
@@ -206,6 +225,7 @@
     ],
     "dialects": [
       "mysql",
+      "mssql",
       "postgres",
       "oracle",
       "cassandra"
@@ -219,6 +239,7 @@
     ],
     "dialects": [
       "mysql",
+      "mssql",
       "postgres",
       "oracle",
       "cassandra"
@@ -255,6 +276,7 @@
     ],
     "dialects": [
       "mysql",
+      "mssql",
       "postgres",
       "oracle",
       "cassandra"
@@ -282,6 +304,7 @@
     ],
     "dialects": [
       "mysql",
+      "mssql",
       "postgres",
       "oracle",
       "cassandra"
@@ -297,6 +320,7 @@
     ],
     "dialects": [
       "mysql",
+      "mssql",
       "postgres",
       "oracle",
       "cassandra"
@@ -309,6 +333,7 @@
     ],
     "dialects": [
       "mysql",
+      "mssql",
       "postgres",
       "oracle",
       "cassandra"
@@ -324,6 +349,7 @@
     ],
     "dialects": [
       "mysql",
+      "mssql",
       "postgres",
       "oracle",
       "cassandra"
@@ -339,6 +365,7 @@
     ],
     "dialects": [
       "mysql",
+      "mssql",
       "postgres",
       "oracle",
       "cassandra"
@@ -354,6 +381,7 @@
     ],
     "dialects": [
       "mysql",
+      "mssql",
       "postgres",
       "oracle",
       "cassandra"
@@ -369,6 +397,7 @@
     ],
     "dialects": [
       "mysql",
+      "mssql",
       "postgres",
       "oracle",
       "cassandra"
@@ -384,6 +413,7 @@
     ],
     "dialects": [
       "mysql",
+      "mssql",
       "postgres",
       "oracle",
       "cassandra"
@@ -406,6 +436,7 @@
     "sql": "SELECT * FROM table WHERE foo='bar' AND baz='nothing to see here",
     "dialects": [
       "mysql",
+      "mssql",
       "postgres",
       "oracle",
       "cassandra"
@@ -433,6 +464,7 @@
     ],
     "dialects": [
       "mysql",
+      "mssql",
       "postgres",
       "oracle",
       "cassandra"
@@ -446,6 +478,7 @@
     ],
     "dialects": [
       "mysql",
+      "mssql",
       "postgres",
       "oracle",
       "cassandra"
@@ -509,6 +542,7 @@
       "select * from foo where bar=? and x=?"
     ],
     "dialects": [
+      "mssql",
       "mysql"
     ]
   },
@@ -520,6 +554,7 @@
     ],
     "dialects": [
       "mysql",
+      "mssql",
       "postgres",
       "oracle",
       "cassandra"
@@ -533,6 +568,7 @@
     ],
     "dialects": [
       "postgres",
+      "mssql",
       "cassandra"
     ]
   },
@@ -553,6 +589,7 @@
       "select * from foo where bar=? and x=?"
     ],
     "dialects": [
+      "mssql",
       "postgres"
     ]
   },
@@ -563,6 +600,7 @@
       "select * from foo where bar=? and x=?"
     ],
     "dialects": [
+      "mssql",
       "postgres"
     ]
   },
